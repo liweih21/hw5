@@ -1,0 +1,26 @@
+Question
+Extract all column names. Count the number of columns (using code).
+
+Question
+Is data in the correct format? By that we mean, do you see integers and floats where you expect them to be the case? If not, convert them into the correct format. Also make sure that all entries are non-null.
+
+Question
+Provide a general summary statistics of the entire dataset. The describe() method is what you would want to use.
+
+Question
+The data type of columns like job, married, education etc. is called categorical data. List all the different categories in the job column.
+
+Question
+In one line of code, provide a count of the number of people who were unemployed and owned a home.
+
+Question
+What is the education level of a typical blue-collar worker? Explore value_counts() method.
+
+Question
+How many who are unemployed have an outstanding loan? Is that percentage more than that of the employed ones?
+
+Question
+What percent of clients subscribed to the term deposit (column y)?
+
+Question
+What percent of married clients subscribed to the term deposit? Is that more or less than that for single folks?
