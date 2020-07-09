@@ -33,14 +33,27 @@ Out: 58
 
 Question
 What is the education level of a typical blue-collar worker? Explore value_counts() method.
-In: 
+In: df.loc[df.job == 'blue-collar', :]
+.education.value_counts()
 
 
 Question
-How many who are unemployed have an outstanding loan? Is that percentage more than that of the employed ones?
+How many who are unemployed have an outstanding loan? Is that percentage more than that of the employed ones? answer: == is unemployed and != is unemployed
+
+In: df.loc[df.job == 'unemployed', 'loan'].value_counts()['yes'] /
+len(df.loc[df.job == 'unemployed', :])
+
+In: df.loc[df.job != 'unemployed', 'loan'].value_counts()['yes'] /
+len(df.loc[df.job != 'unemployed', :])
+
 
 Question
 What percent of clients subscribed to the term deposit (column y)?
+In: sum(df.y == 'yes')
+
 
 Question
 What percent of married clients subscribed to the term deposit? Is that more or less than that for single folks?
+In: sum((df.marital == 'married') & (df.y == 'yes'))
+
+In: sum((df.marital == 'single') & (df.y == 'yes'))
